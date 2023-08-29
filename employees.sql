@@ -6,7 +6,8 @@ ORDER BY emp.emp_no;
 
 SELECT first_name, last_name, hire_date
 FROM employees
-WHERE hire_date BETWEEN '1986-01-01' AND '1986-12-31';
+WHERE hire_date LIKE '%1986';
+
 
 SELECT d.dept_no, d.dept_name, dm.emp_no, e.last_name, e.first_name
 FROM departments d 
